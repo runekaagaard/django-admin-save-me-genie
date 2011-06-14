@@ -1,0 +1,3 @@
+A javascript file that warns the user if he tries to leave a change view page in the admin with unsaved data.
+
+To install it, just include "save_me_genie.js".
