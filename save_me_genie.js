@@ -4,17 +4,17 @@
 	
 	// Set the flag "action_is_post" if the user leaves the page by submitting
 	// the form.
-    var action_is_post = false;
-    $("form").submit(function () {
-        action_is_post = true;
-    });
+        var action_is_post = false;
+        $("form").submit(function () {
+                action_is_post = true;
+        });
 	  
 	// Wait until the form has the "csrfmiddlewaretoken" when trying to
 	// serialize it and then store it to "original_form_state".
 	var original_form_state = null;
 	$(window).load(function() {
 		function set_form_state() {
-			tmp = $('form').serialize();
+			var tmp = $('form').serialize();
 			if (tmp.indexOf('csrfmiddlewaretoken=') !== -1) {
 				original_form_state = tmp;
 			} else {
