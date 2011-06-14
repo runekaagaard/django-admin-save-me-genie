@@ -1,5 +1,5 @@
 (function($) { $(function() {
-	// Skip if not an a change view.
+	// Skip if not on a change view.
 	if (!($("body").hasClass("change-form"))) return;
 	
 	// Set the flag "action_is_post" if the user leaves the page by submitting
@@ -40,8 +40,8 @@
 			// stuff not interfere and get less false positives.
 			&& present_form_state.indexOf(original_form_state) === -1)
 		{
-			return 'You have unsaved changes on the page. Are you sure you want '
-			+ 'to navigate away?';
+			return 'You have unsaved changes on the page. Are you sure you want'
+			       + ' to navigate away?';
 		} else {
 			return null;
 		}
