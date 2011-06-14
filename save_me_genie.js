@@ -4,7 +4,7 @@
 	
 	// Set the flag "action_is_post" if the user leaves the page by submitting
 	// the form.
-	var action_is_post = false;
+    var action_is_post = false;
     $("form").submit(function () {
         action_is_post = true;
     });
