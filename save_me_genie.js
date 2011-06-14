@@ -40,8 +40,8 @@
 			// stuff not interfere and get less false positives.
 			&& present_form_state.indexOf(original_form_state) === -1)
 		{
-			return 'Du har ugemte ændringer på denne side. Er du sikker på at '
-			+ 'du vil navigere væk fra siden?';
+			return 'You have unsaved changes on the page. Are you sure you want '
+			+ 'to navigate away?';
 		} else {
 			return null;
 		}
